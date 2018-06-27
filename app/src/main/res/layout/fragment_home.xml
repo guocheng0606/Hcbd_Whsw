@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:elevation="0dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/tab_1">
+    </android.support.v7.widget.Toolbar>-->
+
+    <include
+        android:id="@+id/home_toolbar"
+        layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/home_toolbar">
+        <TextView
+            android:id="@+id/tv_disconnect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="断开"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"/>
+        <TextView
+            android:id="@+id/tv_normal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="正常"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"/>
+        <TextView
+            android:id="@+id/tv_danger"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="危险"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_top">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/ll_zoom"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_map_zoom_bg">
+            <ImageButton
+                android:id="@+id/ib_large"
+                android:layout_height="36dp"
+                android:layout_width="36dp"
+                android:background="@drawable/selector_map_zoomin"
+                android:src="@drawable/icon_zoomin"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_line"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"/>
+            <ImageButton
+                android:id="@+id/ib_small"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/selector_map_zoomout"
+                android:src="@drawable/icon_zoomout"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_mode"
+            android:layout_height="36dp"
+            android:layout_width="36dp"
+            android:layout_above="@+id/ll_zoom"
+            android:layout_alignLeft="@+id/ll_zoom"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/selector_map_location"
+            android:src="@drawable/icon_maplayer"/>
+        <ImageButton
+            android:id="@+id/ib_loc"
+            android:layout_height="36dp"
+            android:layout_width="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/ll_zoom"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_map_location"
+            android:src="@drawable/icon_location"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

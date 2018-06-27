@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">武汉水务</string>
+    <string name="input_username">请输入用户名</string>
+    <string name="input_password">请输入密码</string>
+    <string name="tab_1">首页地图</string>
+    <string name="tab_2">设备管理</string>
+    <string name="tab_3">报表管理</string>
+    <string name="tab_4">预警管理</string>
+    <string name="tab_5">设置</string>
+    <string name="tab_6">系统设置</string>
+
+    <string name="device_info">设备信息</string>
+    <string name="order">序号</string>
+    <string name="name">名称</string>
+    <string name="input_name">请输入名称</string>
+    <string name="device_name">设备名称</string>
+    <string name="input_device_name">请输入设备名称</string>
+    <string name="device_state">设备状态</string>
+    <string name="sn">SN</string>
+    <string name="input_sn">请输入SN</string>
+    <string name="search_info">查询</string>
+    <string name="power">电量</string>
+    <string name="input_power">请输入电量</string>
+    <string name="input_start_power">请输入开始电量</string>
+    <string name="input_end_power">请输入结束电量</string>
+    <string name="to">至</string>
+    <string name="ok">确定</string>
+    <string name="update">修改</string>
+
+    <string name="pile_name">桩名称</string>
+    <string name="input_pile_name">请输入桩名称</string>
+    <string name="id">ID</string>
+    <string name="input_id">请输入ID</string>
+    <string name="id_">卡ID</string>
+    <string name="input_id_">请输入卡ID</string>
+    <string name="longitude">经度</string>
+    <string name="input_longitude">请输入经度</string>
+    <string name="latitude">纬度</string>
+    <string name="input_latitude">请输入纬度</string>
+    <string name="remark">备注</string>
+    <string name="input_remark">请输入备注</string>
+    <string name="icon">图标</string>
+    <string name="content">内容</string>
+    <string name="start_time">开始时间</string>
+    <string name="select_start_time">请选择开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="select_end_time">请选择结束时间</string>
+
+    <string name="normal">正常</string>
+    <string name="disconnect">断开</string>
+    <string name="danger">危险</string>
+    <string name="idea">处理意见</string>
+    <string name="input_idea">请输入处理意见</string>
+    <string name="deal_state">处理状态</string>
+    <string name="select_deal_state">请选择处理状态</string>
+
+    <string name="refresh_frequency">首页刷新频率</string>
+    <string name="server_parameters">服务器参数</string>
+    <string name="update_password">修改密码</string>
+    <string name="logout">退出登录</string>
+
+    <string name="code">编码</string>
+    <string name="unit">单位</string>
+    <string name="input_unit">请输入单位</string>
+    <string name="value">数值</string>
+    <string name="input_value">请输入数值</string>
+    <string name="state">状态</string>
+    <string name="edit">编辑</string>
+
+    <string name="enable">启用</string>
+    <string name="frozen">冻结</string>
+    <string name="close">关闭</string>
+
+    <string name="username">账号</string>
+    <string name="password">密码</string>
+    <string name="addr">地址</string>
+    <string name="input_addr">请输入地址</string>
+    <string name="line_select">线路选择</string>
+
+    <string name="all">全部</string>
+    <string name="processed">已处理</string>
+    <string name="untreated">未处理</string>
+    <string name="complete">完成</string>
+
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+
+    <string name="ip_address">服务器地址</string>
+    <string name="ip_address_demo">服务器地址（例如：192.168.0.1：8080）</string>
+    <string name="input_ip_address">请输入服务器地址</string>
+    <string name="str_history">历史记录</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
